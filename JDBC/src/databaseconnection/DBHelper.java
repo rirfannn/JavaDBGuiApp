@@ -9,7 +9,7 @@ public class DBHelper {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/dvco", "root", "Adiguna98"); // Ganti dengan username dan password MySQL kamu
+                    "jdbc:mysql://localhost:3306/dvco", "username", "password"); // Ganti dengan username dan password MySQL kamu
         } catch (ClassNotFoundException e) {
             System.out.println("MySQL JDBC Driver not found.");
             e.printStackTrace();
